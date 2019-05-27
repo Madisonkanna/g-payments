@@ -1,1 +1,19 @@
 <h1 class="title">user index!<h1>
+
+<div class="section">
+    <div class="container">
+        <% @users.each do |user| %>
+            <div class="card">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="name is-4"><%= link_to user.name, user  %></p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <% end %>
+    </div>
+</div>
